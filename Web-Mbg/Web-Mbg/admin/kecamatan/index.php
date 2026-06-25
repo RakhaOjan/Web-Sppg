@@ -8,13 +8,13 @@ if (!isset($_SESSION['username'])) {
     exit;
 }
 
-// fitur pencarian
+// fitur search
 $cari = "";
 if (isset($_GET['cari'])) {
     $cari = trim($_GET['cari']);
 }
 
-// query data kecamatan dengan pencarian
+// query data kecamatan dengan fitur search
 if ($cari != "") {
     $ambil = mysqli_query($conn, "
         SELECT * FROM kecamatan
@@ -75,12 +75,12 @@ $base_admin = '../';
                 <?php } ?>
             <?php } ?>
 
-            <!-- Form Pencarian -->
+            <!-- Form Search -->
             <form method="GET" action="index.php">
                 <div class="kotak-cari">
                     <label>Cari Kecamatan:</label>
-                    <input type="text" name="cari" placeholder="Nama kecamatan..."
-                           value="<?php echo $cari; ?>">
+                          <input type="text" name="cari" placeholder="Cari kecamatan..."
+                              value="<?php echo $cari; ?>">
                     <button type="submit">Cari</button>
                     <?php if ($cari != "") { ?>
                         <a href="index.php" class="tombol-reset">Reset</a>

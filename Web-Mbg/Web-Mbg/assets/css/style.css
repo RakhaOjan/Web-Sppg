@@ -5,10 +5,26 @@
 }
 
 body {
+    position: relative;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     background-color: #f0f2f5;
     color: #333;
     font-size: 14px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/logo-sppg.png") center center no-repeat;
+    background-size: 45%;
+    opacity: 0.09;
+    pointer-events: none;
+    z-index: -1;
 }
 
 a {
@@ -36,8 +52,16 @@ a {
 
 .navbar-brand {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-navbar {
+    width: 28px;
+    height: auto;
 }
 
 .navbar-menu {
@@ -56,7 +80,7 @@ a {
 
 .navbar-menu li a:hover,
 .navbar-menu li a.aktif {
-    background-color: rgba(255,255,255,0.15);
+    background-color: rgba(255, 255, 255, 0.15);
     color: white;
 }
 
@@ -108,7 +132,7 @@ a {
 .card {
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     overflow: hidden;
 }
 
@@ -144,7 +168,7 @@ a {
     padding: 20px;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .card-statistik .ikon {
@@ -183,7 +207,7 @@ a {
 .card-kecamatan {
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
     padding: 14px 16px;
     display: flex;
     align-items: center;
@@ -193,7 +217,7 @@ a {
 }
 
 .card-kecamatan:hover {
-    box-shadow: 0 4px 14px rgba(0,0,0,0.13);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.13);
     transform: translateY(-2px);
 }
 
@@ -256,7 +280,7 @@ footer {
 .kotak-auth {
     background: white;
     border-radius: 8px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
     width: 100%;
     max-width: 420px;
 }
@@ -264,9 +288,16 @@ footer {
 .auth-header {
     background-color: #1e3a5f;
     color: white;
-    padding: 28px 20px;
+    padding: 24px 20px 18px;
     text-align: center;
     border-radius: 8px 8px 0 0;
+}
+
+.auth-header .logo-auth {
+    width: 48px;
+    height: auto;
+    display: block;
+    margin: 0 auto 8px;
 }
 
 .auth-header .ikon-besar {
@@ -469,11 +500,18 @@ footer {
 .sidebar-logo {
     text-align: center;
     padding: 22px 16px 14px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-logo .logo-sidebar {
+    width: 52px;
+    height: auto;
+    display: block;
+    margin: 0 auto 8px;
 }
 
 .sidebar-logo .ikon-logo {
-    font-size: 32px;
+    font-size: 24px;
     color: #90b4d8;
 }
 
@@ -513,12 +551,12 @@ footer {
 }
 
 .sidebar-menu a:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     color: white;
 }
 
 .sidebar-menu a.aktif {
-    background-color: rgba(255,255,255,0.18);
+    background-color: rgba(255, 255, 255, 0.18);
     color: white;
     font-weight: bold;
     border-left: 3px solid #90b4d8;
@@ -536,7 +574,7 @@ footer {
     padding: 14px 24px;
     display: flex;
     align-items: center;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
 .topbar h5 {
@@ -573,7 +611,7 @@ footer {
     background: white;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
     display: flex;
     align-items: center;
     gap: 16px;
@@ -617,7 +655,7 @@ footer {
 .kotak-cari {
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
     padding: 16px 20px;
     margin-bottom: 20px;
     display: flex;
@@ -692,7 +730,7 @@ footer {
 .kotak-tabel {
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
     overflow: hidden;
 }
 
@@ -836,7 +874,7 @@ table tbody tr:last-child {
     min-width: 140px;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
     padding: 20px 14px;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -845,7 +883,7 @@ table tbody tr:last-child {
 
 .card-shortcut:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 16px rgba(0,0,0,0.12);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.12);
 }
 
 .card-shortcut .ikon-shortcut {

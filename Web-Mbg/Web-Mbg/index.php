@@ -32,7 +32,10 @@ $judul_halaman = 'Beranda';
 <!-- NAVBAR -->
 <nav class="navbar">
     <div class="navbar-inner">
-        <a href="index.php" class="navbar-brand"> SPPG Kota Bekasi</a>
+                <a href="index.php" class="navbar-brand">
+            <img src="assets/images/logo-sppg.png" alt="Logo SPPG" class="logo-navbar">
+            <span>SPPG Kota Bekasi</span>
+        </a>
         <ul class="navbar-menu">
             <li><a href="index.php" class="aktif">Beranda</a></li>
             <li><a href="auth/login.php">Login</a></li>

@@ -1,5 +1,6 @@
 <div class="sidebar">
     <div class="sidebar-logo">
+        <img src="<?php echo $base_admin; ?>../assets/images/logo-sppg.png" alt="Logo SPPG" class="logo-sidebar">
         <div class="nama-logo">SPPG Bekasi</div>
         <div class="sub-logo">Kota Bekasi</div>
     </div>

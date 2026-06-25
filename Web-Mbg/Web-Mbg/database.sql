@@ -1,6 +1,5 @@
 -- =============================================
 -- DATABASE SPPG KOTA BEKASI
--- Versi: Revisi (CSS Murni, Role Admin/User)
 -- =============================================
 
 CREATE DATABASE IF NOT EXISTS `sppg_bekasi`
@@ -64,7 +63,6 @@ INSERT INTO `sppg` (`id_sppg`, `nama_sppg`, `alamat`, `status`, `id_kecamatan`) 
 
 -- =============================================
 -- Tabel: tbl_user
--- password masih plain text (sesuai level SMK)
 -- =============================================
 
 CREATE TABLE `tbl_user` (

@@ -67,7 +67,7 @@ if ($cari != "") {
     <!-- SIDEBAR -->
     <div class="sidebar">
         <div class="sidebar-logo">
-            <div class="ikon-logo">&#9829;</div>
+            <div><img src="../assets/images/logo-sppg.png" alt="Logo SPPG" class="logo-sidebar"></div>
             <div class="nama-logo">SPPG Bekasi</div>
             <div class="sub-logo">Kota Bekasi</div>
         </div>
@@ -138,7 +138,7 @@ if ($cari != "") {
             <form method="GET" action="dashboard.php">
                 <div class="kotak-cari">
                     <label>Cari SPPG:</label>
-                    <input type="text" name="cari" placeholder="Nama SPPG atau Kecamatan..."
+                    <input type="text" name="cari" placeholder="Cari nama SPPG atau kecamatan..."
                     value="<?php echo $cari; ?>">
                     <button type="submit">Cari</button>
                     <?php if ($cari != "") { ?>

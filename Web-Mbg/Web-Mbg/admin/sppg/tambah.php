@@ -124,8 +124,8 @@ $base_admin = '../';
                             <div class="form-grup">
                                 <label>Alamat</label>
                                 <textarea name="alamat" rows="3"
-                                    placeholder="Masukkan alamat lengkap SPPG..."><?php echo isset($_POST['alamat']) ? $_POST['alamat'] : ''; ?></textarea>
-                                <span class="hint">Boleh dikosongkan jika alamat belum diketahui.</span>
+                                    placeholder="Alamat lengkap (opsional)"><?php echo isset($_POST['alamat']) ? $_POST['alamat'] : ''; ?></textarea>
+                                <span class="hint">Kosongkan jika tidak ada.</span>
                             </div>
 
                             <div class="form-grup">

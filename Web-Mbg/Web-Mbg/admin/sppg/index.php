@@ -87,8 +87,8 @@ $base_admin = '../';
             <form method="GET" action="index.php">
                 <div class="kotak-cari">
                     <label>Cari SPPG:</label>
-                    <input type="text" name="cari" placeholder="Nama SPPG atau Kecamatan..."
-                           value="<?php echo $cari; ?>">
+                          <input type="text" name="cari" placeholder="Cari nama SPPG atau kecamatan..."
+                              value="<?php echo $cari; ?>">
                     <button type="submit">Cari</button>
                     <?php if ($cari != "") { ?>
                         <a href="index.php" class="tombol-reset">Reset</a>

@@ -87,8 +87,8 @@ $base_admin = '../';
 
                             <div class="form-grup">
                                 <label>Nama Kecamatan <span style="color:red;">*</span></label>
-                                <input type="text" name="nama_kecamatan"
-                                       placeholder="Contoh: Bekasi Timur"
+                                    <input type="text" name="nama_kecamatan"
+                                        placeholder="Misal: Bekasi Timur"
                                        value="<?php echo isset($_POST['nama_kecamatan']) ? $_POST['nama_kecamatan'] : ''; ?>">
                                 <span class="hint">Masukkan nama kecamatan dengan benar.</span>
                             </div>

@@ -138,7 +138,7 @@ if (isset($_POST['daftar'])) {
                                         <i class="bi bi-lock-fill"></i>
                                     </span>
                                     <input type="password" name="konfirm_password" class="form-control"
-                                        placeholder="Ulangi password"
+                                        placeholder="Konfirmasi password"
                                         required>
                                 </div>
                             </div>
